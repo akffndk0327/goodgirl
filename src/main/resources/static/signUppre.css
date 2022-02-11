@@ -1,0 +1,41 @@
+#container{
+    margin : 100px auto;
+    max-width:768px;
+    min-width:460px
+}
+
+.terms_box {
+    overflow-y: scroll;
+    margin: 20px;
+    width: 800px;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.article__title{
+    font-size: 15px;
+}
+
+.btn_area{
+    margin: 0 270px auto;
+}
+.btn_type{
+    margin: 20px;
+}
+
+ul{
+    list-style:none;
+}
+
+#divService{
+    padding: 10px;
+}
+
+#btnAgree{
+    margin-left: 20px;
+}
+
+span{
+    margin: 10px;
+}

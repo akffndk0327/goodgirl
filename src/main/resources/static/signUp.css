@@ -1,0 +1,29 @@
+.container-sm{
+    margin : 100px auto;
+    max-width: 700px;
+}
+
+.btn{
+    margin-left: 80px;
+}
+
+.pswd, .pswd_check{
+   position: relative;
+}
+
+
+.pswd:after, .pswd_check:after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top:75%;
+    right: 13px;
+    width: 24px;
+    height: 24px;
+    margin-top: -12px;
+    background-image: url(https://static.nid.naver.com/images/ui/join/m_icon_pw_step.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 125px 75px;
+    cursor: pointer;
+}

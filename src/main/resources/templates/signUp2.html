@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/sweetalert2/dist/sweetalert2.min.css"/>
+    <link rel="stylesheet" href="signUp.css"/>
+    <link rel="stylesheet" href="custom.css"/>
+</head>
+<style>
+.pswd_check:after {
+    background-position: -27px 0;
+}
+</style>
+
+<body>
+
+<form id="join_form" class="row g-3" method="post" >
+    <div class="container-sm" role="main">
+        <div class="content">
+            <div class="col-md">
+                <label for="id" class="form-label">아이디</label>
+                <input type="text" class="form-control" id="id" name="id">
+            </div>
+            <div class="pswd col-md-12">
+                <label for="pswd1" class="form-label">비밀번호</label>
+                <input type="password" class="form-control" id="pswd1" name="pswd1">
+
+            </div>
+            <div class="pswd_check col-md-12">
+                <label for="pswd2" class="form-label">비밀번호 재확인 </label>
+                <input type="password" class="form-control" id="pswd2" name="pswd2">
+            </div>
+            <div class="col-md-12">
+                <label for="name" class="form-label">이름 </label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+
+            <div class="col-md-12">
+                <label for="inputAddress" class="form-label">주소</label>
+                <input type="text" class="form-control" id="inputAddress" name="inputAddress">
+            </div>
+
+            <div class="col-md-12">
+                <label for="email" class="form-label">이메일</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+            </div>
+            <div class="row">
+                <h6>생년월일</h6>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="inputbirth" placeholder="년(4자)" name="inputbirth">
+                </div>
+                <div class="col-md-4">
+                    <select id="inputmm" class="form-select" name="inputmm" >
+                        <option selected="" value="">월</option>
+                        <option value="1">1월</option>
+                        <option value="2">2월</option>
+                        <option value="3">3월</option>
+                        <option value="4">4월</option>
+                        <option value="5">5월</option>
+                        <option value="6">6월</option>
+                        <option value="7">7월</option>
+                        <option value="8">8월</option>
+                        <option value="9">9월</option>
+                        <option value="10">10월</option>
+                        <option value="11">11월</option>
+                        <option value="12">12월</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="inputdd" placeholder="일" name="inputdd">
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <label for="inputgender" class="form-label">성별</label>
+                <select id="inputgender" class="form-select" name="inputgender">
+                    <option value="" selected="">성별</option>
+                    <option value="M">남자</option>
+                    <option value="F">여자</option>
+                    <option value="U">선택 안함</option>
+                </select>
+            </div>
+            <div class="col-md-12">
+                <label for="inputnum" class="form-label" >전화번호</label>
+                <input type="text" class="form-control" id="inputnum" name="inputnum">
+            </div>
+
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Check me out
+                    </label>
+                </div>
+            </div>
+            <div class="btn col-6" >
+                <button type="reset" class="btn btn-secondary">취소</button>
+                <button type="button" class="btn btn-primary" id="btnJoin">가입</button>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/plugin.bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="/sweetalert2/dist/sweetalert2.all.min.js"></script>
+<script type="text/javascript" src="/icons/js/fontawesome.js"></script>
+<script type="text/javascript" src="custom.js"></script>
+</html>
