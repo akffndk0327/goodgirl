@@ -191,6 +191,12 @@ $("#btnAjax").click(function () {
 
 })
 
+//login 후- 고객정보수정하기
+function update(){
+
+
+}
+
 
 // $("#btn_content2").click(function () {
 //     var content1 = $("#content1").val(); //내용1 값을 가져오고

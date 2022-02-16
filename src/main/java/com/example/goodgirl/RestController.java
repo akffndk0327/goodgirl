@@ -4,6 +4,7 @@ import com.example.goodgirl.entity.Member;
 import com.example.goodgirl.repo.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import javax.servlet.http.HttpServletRequest;
@@ -52,5 +53,13 @@ public class RestController {
             return "없는 회원입니다.";
         }
     }
+
+    //회원정보수정
+    @PutMapping("update/{id}")
+    public String updateMember(Member member){
+        memRepo.findById(member.getId());
+        return "ok";
+    }
+
 
 }
