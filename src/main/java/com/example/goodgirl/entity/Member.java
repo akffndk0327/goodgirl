@@ -1,7 +1,5 @@
 package com.example.goodgirl.entity;
 
-import com.sun.xml.internal.ws.api.ha.StickyFeature;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;

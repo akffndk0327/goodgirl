@@ -17,7 +17,7 @@
 
 <body>
 
-<form id="join_form" class="row g-3" method="post" >
+<form id="join_form" class="row g-3" >
     <div class="container-sm" role="main">
         <div class="content">
             <div class="col-md">
@@ -26,12 +26,12 @@
             </div>
             <div class="pswd col-md-12">
                 <label for="pswd1" class="form-label">비밀번호</label>
-                <input type="password" class="form-control" id="pswd1" name="pswd1">
+                <input type="password" class="form-control" id="pswd1" name="password">
 
             </div>
             <div class="pswd_check col-md-12">
                 <label for="pswd2" class="form-label">비밀번호 재확인 </label>
-                <input type="password" class="form-control" id="pswd2" name="pswd2">
+                <input type="password" class="form-control" id="pswd2" >
             </div>
             <div class="col-md-12">
                 <label for="name" class="form-label">이름 </label>
@@ -40,7 +40,7 @@
 
             <div class="col-md-12">
                 <label for="inputAddress" class="form-label">주소</label>
-                <input type="text" class="form-control" id="inputAddress" name="inputAddress">
+                <input type="text" class="form-control" id="inputAddress" name="address">
             </div>
 
             <div class="col-md-12">
@@ -49,34 +49,15 @@
             </div>
             <div class="row">
                 <h6>생년월일</h6>
-                <div class="col-md-4">
-                    <input type="text" class="form-control" id="inputbirth" placeholder="년(4자)" name="inputbirth">
+                <div class="col-md-12">
+                    <input type="date" class="form-control" id="inputbirth" placeholder="생년월일(yyyy-mm-dd)" name="birthday">
                 </div>
-                <div class="col-md-4">
-                    <select id="inputmm" class="form-select" name="inputmm" >
-                        <option selected="" value="">월</option>
-                        <option value="1">1월</option>
-                        <option value="2">2월</option>
-                        <option value="3">3월</option>
-                        <option value="4">4월</option>
-                        <option value="5">5월</option>
-                        <option value="6">6월</option>
-                        <option value="7">7월</option>
-                        <option value="8">8월</option>
-                        <option value="9">9월</option>
-                        <option value="10">10월</option>
-                        <option value="11">11월</option>
-                        <option value="12">12월</option>
-                    </select>
-                </div>
-                <div class="col-md-4">
-                    <input type="text" class="form-control" id="inputdd" placeholder="일" name="inputdd">
-                </div>
+
             </div>
 
             <div class="col-md-12">
                 <label for="inputgender" class="form-label">성별</label>
-                <select id="inputgender" class="form-select" name="inputgender">
+                <select id="inputgender" class="form-select" name="gender">
                     <option value="" selected="">성별</option>
                     <option value="M">남자</option>
                     <option value="F">여자</option>
@@ -85,7 +66,7 @@
             </div>
             <div class="col-md-12">
                 <label for="inputnum" class="form-label" >전화번호</label>
-                <input type="text" class="form-control" id="inputnum" name="inputnum">
+                <input type="text" class="form-control" id="inputnum" name="phone">
             </div>
 
             <div class="col-12">
@@ -96,17 +77,18 @@
                     </label>
                 </div>
             </div>
-            <div class="btn col-6" >
+            <div class="btn col-12" >
                 <button type="reset" class="btn btn-secondary">취소</button>
                 <button type="button" class="btn btn-primary" id="btnJoin">가입</button>
+                <button type="button" class="btn btn-primary" id="btnAjax">Ajax가입</button>
             </div>
         </div>
     </div>
 </form>
 </body>
 <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="/plugin.bootstrap/js/bootstrap.js"></script>
+<!--<script type="text/javascript" src="jquery.serializeObject.min.js"></script>-->
+<script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
 <script type="text/javascript" src="/sweetalert2/dist/sweetalert2.all.min.js"></script>
-<script type="text/javascript" src="/icons/js/fontawesome.js"></script>
 <script type="text/javascript" src="custom.js"></script>
 </html>

@@ -9,57 +9,29 @@
 
 </head>
 <body>
-<div class="container-sm">
-<!--    가입된 회원 목록 -> 타임리프이용해서 띄우기-->
-
-    <table>
-        <thead>
-           <tr>
-                <th>아이디</th>
-                <th>이름</th>
-                <th>주소</th>
-                <th>이메일</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr th:each="mem : ${memRepo}">
-                <td th:text="${mem.id}" ></td>
-                <td th:text="${mem.name}" ></td>
-                <td th:text="${mem.address}" ></td>
-                <td th:text="${mem.email}" ></td>
-            </tr>
-
-        </tbody>
-
-    </table>
-
-
-
-    <div class="row">
-        <div class="input-group input-group-md">
+<form id="login_form" class="row g-3">
+    <div class="container-sm">
+        <div class="row">
+            <div class="input-group input-group-md">
+                <div class="col-md">
+                    <input type="text" class="form-control" id="loginid" placeholder="아이디" name="id">
+                    <input type="password" class="form-control" id="loginpwds" name="password" placeholder="비밀번호">
+                </div>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md">
-                <input type="text" class="form-control" id="memId" placeholder="아이디">
+                <button class="btn btn-primary" type="button" id="login">로그인</button>
+                <button class="btn btn-primary" type="button" id="sign">회원가입</button>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="input-group input-group-md">
-            <div class="col-md">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="비밀번호">
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md">
-            <button class="btn btn-primary" type="button" id="sign">회원가입</button>
-        </div>
-    </div>
-</div>
+</form>
 
 
 </body>
 <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="/plugin.bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
 <script type="text/javascript" src="/sweetalert2/dist/sweetalert2.all.min.js"></script>
 <script type="text/javascript" src="custom.js"></script>
 

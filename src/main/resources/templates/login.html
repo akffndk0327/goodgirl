@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/sweetalert2/dist/sweetalert2.min.css"/>
+    <link rel="stylesheet" href="custom.css"/>
+
+</head>
+<body>
+<div class="container-sm" >
+    <table>
+        <thead>
+        <tr>
+            <th>아이디</th>
+            <th>이름</th>
+            <th>주소</th>
+            <th>이메일</th>
+        </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td th:text="${memRepo.id}"></td>
+                    <td th:text="${memRepo.name}"></td>
+                    <td th:text="${memRepo.address}"></td>
+                    <td th:text="${memRepo.email}"></td>
+                </tr>
+        </tbody>
+    </table>
+</div>
+<div class="btn col-12" >
+    <button class="btn btn-primary" type="button" id="update">수정</button>
+    <button type="button" class="btn btn-danger" id="remove">삭제</button>
+</div>
+</body>
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="/sweetalert2/dist/sweetalert2.all.min.js"></script>
+<script type="text/javascript" src="custom.js"></script>
+
+</html>
